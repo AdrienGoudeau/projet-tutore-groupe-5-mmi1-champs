@@ -1,0 +1,57 @@
+Attention !
+
+Comme toute production dans le cadre de vos études, ce travail doit être réalisé par les membres du groupe et le plagiat est proscrit. Tout contenu provenant d'une autre source doit être indiqué comme tel :
+
+pour du texte : citation placée entre guillemets et source de la citation indiquée dans le texte ou en note de bas de page
+pour des contenus visuels : précision de la source dans la légende de l'image, respect de la propriété intellectuelle (réutilisation possible seulement si autorisation ou bien mise à disposition sous licence libre)
+Description du travail demandé
+
+
+Étape 1 - Choix des fonctionnalités
+Décrivez chacune des fonctionnalités qui seront implémentées dans votre site web sous la forme d'un récit utilisateur. 
+Par exemple, En tant que étudiante ou étudiant de deuxième année de MMI, je peux voir, dans le profil d’une formation, son nom, son URL et l’établissement qui la propose ainsi que sa localisation, 
+ou bien En tant que lycéenne ou lycéen qui envisage de postuler en DUT MMI, je peux voir la liste des métiers accessibles à l’issue d’un DUT MMI, triés en fonction du choix de spécialité du semestre 4.
+
+Pour chacune de ces fonctionnalités, précisez s'il s'agit d'une fonctionnalité prioritaire qui sera développée quoi qu'il arrive, ou d'une fonctionnalité optionnelle développée seulement si vous en avez le temps. 
+Pour chacune de ces fonctionnalités, expliquez pourquoi il vous semble important de l'intégrer dans votre plateforme, en montrant en quoi elle répond aux besoins de la cible visée, 
+c'est-à-dire du profil des personnes qui visitent votre plateforme. Il est possible que votre plateforme ne soit destinée qu'à une seule cible : dans ce cas, toutes les justifications devront faire référence à cette cible. 
+Pensez à numéroter chacune des fonctionnalités pour pouvoir y faire référence à l'étape 2.
+
+Étape 2 - Préparation du modèle conceptuel des données
+Dessinez le modèle conceptuel des données décrivant la base de données qui devra être mise en place pour réunir toutes les informations utilisées par les fonctionnalités de l'étape précédente. 
+Décrivez, pour chacune des fonctionnalités de l'étape 1, quelles sont les entités, attributs, ou relations choisies pour permettre de les réaliser.
+
+Cette étape devrait vous permettre de faire les bons choix pour répondre aux questions suivantes. 
+Comment allez-vous organiser cette base de données : aurez-vous besoin d'une seule entité/table ou bien de plusieurs ? Qu'allez-vous stocker, et sous quelle forme ?
+
+Étape 3 - Préparation du modèle physique des données
+Dessinez le modèle physique des données correspondant au modèle conceptuel des données de l'étape précédente.
+
+Étape 4 - Réalisation de la base de données
+Créez la base de données SQL correspondant au modèle physique des données décrit à l'étape précédente.
+
+Étape 5 - Planification de la récupération des données
+Décrivez de quelle manière vous allez vous organiser pour récupérer les données dont vous avez besoin pour chaque table de la base. 
+Il n'est pas interdit de chercher à mutualiser avec d'autres groupes le processus de récupération de données.
+
+Description du livrable à envoyer pour chaque groupe : un fichier ZIP contenant un fichier PDF et un fichier SQL
+Un document PDF contenant votre travail pour les étapes 1, 2, 3 et 5 ci-dessus devra être généré. 
+Il sera réalisé en groupe par chaque groupe de projet tutoré. Pensez à le planifier au mieux, pour prévoir des réunions de travail en commun 
+(par exemple, pour l'étape 1 : chaque personne propose trois fonctionnalités sur des post-its, avant une mise en commun puis discussion) ou du travail collaboratif à distance (par exemple, pour les étapes 2 et 3, 
+création d'un document collaboratif sur Google Slides en chargeant chaque personne du groupe d'ajouter les entités, attributs et relations, correspondant aux fonctionnalités de l'étape 1 ; 
+ou attribution de la création du modèle conceptuel à une seule personne, relecture par une autre, puis création du modèle physique par une troisième personne).
+
+La taille de ce document devra être inférieure à 10 Mo, et il sera combiné avec le fichier sql d’export de la base de données réalisée dans l’étape 4, 
+à l’intérieur d’un fichier ZIP unique. Ce fichier sera envoyé par chaque groupe dans l’espace de dépôt prévu sur eLearning pour le cours M2203 (bases de données), le mardi 6 avril 2021 à 22 heures (heure de Paris) au plus tard.
+
+Critères d'évaluation utilisés pour la note du module M2203 (bases de données) et barème indicatif :
+
+choix des fonctionnalités (description, priorisation, justification) : 5 points
+
+modèle conceptuel des données (entités, attributs, relations, choix des noms) : 5 points
+
+modèle physique des données (clés étrangères et primaires, types) : 5 points
+
+planification de la récupération des données (outils de collecte et de traitement, attribution des tâches et mutualisation avec d'autres groupe, diversité et fiabilité des sources, contrôle qualité) : 5 points
+
+forme (clarté du document et orthographe) : malus possible de 2 points au maximum
