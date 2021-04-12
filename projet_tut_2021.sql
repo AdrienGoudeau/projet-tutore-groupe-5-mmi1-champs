@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 24 mars 2021 à 16:40
+-- Généré le : mer. 07 avr. 2021 à 00:08
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.3
 
@@ -25,24 +25,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `metier`
+-- Structure de la table `categorie_metiers`
 --
 
-CREATE TABLE `metier` (
-  `nom` varchar(50) NOT NULL
+CREATE TABLE `categorie_metiers` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(50) NOT NULL,
+  `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `users`
+-- Structure de la table `formulaire`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `formulaire` (
   `id` int(11) NOT NULL,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
-  `courriel` int(11) NOT NULL
+  `sujet` varchar(50) NOT NULL,
+  `texte` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `metier`
+--
+
+CREATE TABLE `metier` (
+  `id` int(11) NOT NULL,
+  `podcast` varchar(255) NOT NULL,
+  `salaire` text NOT NULL,
+  `taches` text NOT NULL,
+  `competences` text NOT NULL,
+  `qualites` text NOT NULL,
+  `niv_forma` text NOT NULL,
+  `poursuite_etu` text NOT NULL,
+  `id_cat` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -50,26 +71,55 @@ CREATE TABLE `users` (
 --
 
 --
+-- Index pour la table `categorie_metiers`
+--
+ALTER TABLE `categorie_metiers`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `formulaire`
+--
+ALTER TABLE `formulaire`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `metier`
 --
 ALTER TABLE `metier`
-  ADD PRIMARY KEY (`nom`);
-
---
--- Index pour la table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `contient` (`id_cat`) USING BTREE;
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT pour la table `users`
+-- AUTO_INCREMENT pour la table `categorie_metiers`
 --
-ALTER TABLE `users`
+ALTER TABLE `categorie_metiers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `formulaire`
+--
+ALTER TABLE `formulaire`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `metier`
+--
+ALTER TABLE `metier`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `metier`
+--
+ALTER TABLE `metier`
+  ADD CONSTRAINT `contient` FOREIGN KEY (`id_cat`) REFERENCES `categorie_metiers` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
