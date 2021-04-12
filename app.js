@@ -1,3 +1,7 @@
 $( document ).ready(function() {
-    alert("bottom text");
+    $( "img" ).click(function() {
+        $( "img" ).animate({
+          width: ["toggle", "swing"]
+        });
+      });
   });
