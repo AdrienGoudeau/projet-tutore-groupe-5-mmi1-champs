@@ -1,9 +1,20 @@
-div, img
+body
+{
+    margin: 0 auto;
+}
+div
 {
     position: absolute;
 }
-.pic2
+img
 {
     position: absolute;
-    left: 250px;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 500px;
+    left: 50vw;
+    bottom: -100vh;
+    transform: translateX(-50%);
 }

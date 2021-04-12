@@ -1,16 +1,16 @@
 $( document ).ready(function() {
     $("div").click(function()
     {
-        $("div").animate({left: "900px"});
+        $("div").animate({left: "25vw"});
         $("").hide(1000);
         {
-            $("div").animate({top: "300px"});
+            $("div").animate({top: "25vh"});
             $("").hide(1000);
             {
-                $("div").animate({left: "0px"});
+                $("div").animate({left: "0vw"});
                 $("").hide(1000);
                 {
-                    $("div").animate({top: "0px"});
+                    $("div").animate({top: "0vh"});
                 }
             }
         }
