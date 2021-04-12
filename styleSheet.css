@@ -1,0 +1,9 @@
+div, img
+{
+    position: absolute;
+}
+.pic2
+{
+    position: absolute;
+    left: 250px;
+}

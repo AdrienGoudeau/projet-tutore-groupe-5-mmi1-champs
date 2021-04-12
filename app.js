@@ -1,16 +1,16 @@
 $( document ).ready(function() {
     $("div").click(function()
     {
-        $("div").animate({marginLeft: "300px"});
+        $("div").animate({left: "900px"});
         $("").hide(1000);
         {
-            $("div").animate({marginTop: "300px"});
+            $("div").animate({top: "300px"});
             $("").hide(1000);
             {
-                $("div").animate({marginLeft: "0px"});
+                $("div").animate({left: "0px"});
                 $("").hide(1000);
                 {
-                    $("div").animate({marginTop: "0px"});
+                    $("div").animate({top: "0px"});
                 }
             }
         }
