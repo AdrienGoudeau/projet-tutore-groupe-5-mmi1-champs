@@ -12,7 +12,7 @@ $(document).ready(function() {
             top: "-50vh"
             },{
               duration: 1000,
-              easing: "ease"
+              easing: "ease-in-out"
             })
     })
 });
