@@ -1,0 +1,73 @@
+body
+{
+    margin: 0 auto;
+    background: #AC6479;
+}
+.Welcome
+{
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 50%;
+    padding-top: 30px;
+    padding-bottom: 175px;
+    background: linear-gradient(#8566B1, #5F4F79 80%, #9B6559);
+}
+.Team
+{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background: #9B6559;
+}
+.Start
+{
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #AC6479;
+}
+.ourGroup
+{
+    display: flex;
+}
+.ourGroup div
+{
+    margin: 0 auto;
+}
+.ourGroup div p
+{
+    font-size: 1.5em;
+}
+.ourGroup div h1
+{
+    font-size: 2.5em;
+}
+p, h1
+{
+    color: white;
+}
+a
+{
+    display: inline-block;
+    border: solid 5px;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 2em;
+    transition: 0.3s;
+}
+a:hover
+{
+    background-color: white;
+    color: #AC6479;
+    border: solid 5px white;
+    transition: 0.3s;
+}
