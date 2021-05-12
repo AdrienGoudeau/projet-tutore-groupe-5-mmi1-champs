@@ -3,6 +3,16 @@ body
     margin: 0 auto;
     background: #AC6479;
 }
+.Mountain
+{
+    margin: -15px;
+    background-image: url("resource/indexMountains.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 3000px;
+    background-color: linear-gradient(#F4B795 50%, #5F4F79);
+    height: 600px;
+}
 .Welcome
 {
     font-size: 1.5em;
