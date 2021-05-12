@@ -4,6 +4,14 @@ $(document).ready(function() {
            return false; // Or e.preventDefault()
         }
     });
+    $("img").velocity({
+        width: "100vw",
+        height: "100vh",
+        top: "0vh"
+    },{
+          duration: 1000,
+          easing: "ease-in-out"
+    })
     $("img").click(function()
     {
         $("img").velocity({
