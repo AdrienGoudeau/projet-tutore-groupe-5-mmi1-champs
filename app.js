@@ -4,15 +4,15 @@ $(document).ready(function() {
            return false; // Or e.preventDefault()
         }
     });
-    $('ileDesign').velocity({
-        width: "100vw",
-        height: "100vh",
-        top: "0vh"
+    $(".ileDesign").velocity({
+        width: "80vw",
+        height: "80vh",
+        top: "10vh"
     },{
           duration: 1000,
           easing: "ease-in-out"
     })
-    $('ileDesign').click(function()
+    $(".ileDesign").click(function()
     {
         $("img").velocity({
             width: "170vw",
