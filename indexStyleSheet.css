@@ -1,24 +1,22 @@
 body
 {
     margin: 0 auto;
-    background: #AC6479;
+    height: auto;
 }
 .Mountain
 {
-    margin: -15px;
-    background-image: url("resource/indexMountains.svg");
+    background-image: url("resource/indexMountains.svg"), linear-gradient(#F4B795, #5F4F79);
     background-position: bottom center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: 3000px;
-    background-color: linear-gradient(#F4B795 50%, #5F4F79);
     height: 600px;
 }
 .Welcome
 {
     font-size: 1.5em;
     text-align: center;
-    padding-left: 10%;
-    padding-right: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 30px;
     padding-bottom: 175px;
     background: linear-gradient(#8566B1, #5F4F79 80%, #9B6559);
@@ -26,8 +24,8 @@ body
 .Team
 {
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 20px;
     padding-bottom: 50px;
     background: #9B6559;
@@ -36,19 +34,31 @@ body
 {
     font-size: 1.5em;
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 50px;
     padding-bottom: 50px;
     background: #AC6479;
 }
-.ourGroup
+.Team h1
+{
+    font-size: 4em;
+}
+.ourGroup, .WelAlign
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .ourGroup div
 {
     margin: 0 auto;
+}
+.WelAlign div
+{
+    margin: 0 auto;
+    max-width: 40%;
+    max-height: 40%;
+    align-self: center;
 }
 .ourGroup div p
 {
@@ -80,4 +90,6 @@ a:hover
     color: #AC6479;
     border: solid 5px white;
     transition: 0.3s;
+    padding-left: 70px;
+    padding-right: 70px;
 }
