@@ -102,7 +102,7 @@ body
     max-width: 40%;
     align-self: center;
 }
-.WelAlign div img
+.WelAlign div object
 {
     max-width: 115%;
     max-height: auto;
@@ -152,13 +152,6 @@ p, h1
 .Welcome p
 {
     font-size: 0.9em;
-}
-.Welcome img
-{
-    animation-name: bouncing;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
 }
 .vague1
 {
