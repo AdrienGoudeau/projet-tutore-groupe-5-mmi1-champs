@@ -8,7 +8,7 @@ body
 }
 .Mountain
 {
-    background: url("resource/indexPeak.svg") fixed;
+    background: url("images/indexPeak.svg") fixed;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
