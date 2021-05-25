@@ -12,9 +12,7 @@ div
 .ileDesign
 {
     position: absolute;
-    width: 30vw;
-    height: 30vh;
-    top: 35vh;
-    left: 50vw;
-    transform: translateX(-50%);
+    width: 70vw;
+    height: 70vh;
+    transform: translateX(30%) translateY(30%);
 }
