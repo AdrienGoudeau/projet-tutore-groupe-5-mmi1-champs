@@ -8,7 +8,7 @@ body
 }
 .Mountain
 {
-    background: url("../images/indexPeak.svg") fixed;
+    background: url("../images/index-peak.svg") fixed;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ p, h1
 .Mountain h2
 {
     color: goldenrod;
-    font-size: 6vw;
+    font-size: 6em;
 }
 .Mountain a
 {
