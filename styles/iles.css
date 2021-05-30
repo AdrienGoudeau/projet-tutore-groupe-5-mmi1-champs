@@ -11,8 +11,9 @@ body
     justify-content: center;
     height: 100vh;
     text-align: center;
+    transform: translateX(40vw);
 }
-.ileDesign
+.ilePos
 {
     width: 80vw;
     max-height: 70vh;
