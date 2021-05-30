@@ -5,14 +5,16 @@ body
     height: 100%;
     background-color: #3A85DD;
 }
-div
+.iles
 {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
 }
 .ileDesign
 {
-    position: absolute;
-    width: 70vw;
-    height: 70vh;
-    transform: translateX(30%) translateY(30%);
+    width: 80vw;
+    max-height: 70vh;
+    margin: auto;
 }
