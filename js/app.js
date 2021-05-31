@@ -4,23 +4,12 @@ $(document).ready(function() {
            return false; // Or e.preventDefault()
         }
     });
-//     $(".ileDesign").velocity({
-//         width: "80vw",
-//         height: "80vh",
-//         top: "10vh"
-//     },{
-//           duration: 1000,
-//           easing: "ease-in-out"
-//     })
-//     $(".ileDesign").click(function()
-//     {
-//         $("img").velocity({
-//             width: "170vw",
-//             height: "170vh",
-//             top: "-50vh"
-//             },{
-//               duration: 1000,
-//               easing: "ease-in-out"
-//             })
-//     })
+    $(".ileAudio").on("click",function()
+    {
+        $(".iles").transition({x:'-100vw'},1000,'ease');
+    })
+    $(".ileDesign").on("click",function()
+    {
+        $(".iles").transition({x:'0'},1000,'ease');
+    })
 });
