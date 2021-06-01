@@ -5,21 +5,29 @@ body
     height: 100%;
     background-color: #3A85DD;
 }
-/* .debugTest
-{
-    display: flex;
-} */
-a
+.peak
 {
     position: absolute;
     padding: 3.5vw;
+    left: 50vw;
+    top: 50vh;
     background: rgba(255, 0, 0, 0.5);
-    transform: translateX(-50%) translateY(-50%);
 }
 .mtn1
 {
-    left: 28vw;
-    top: 42vh;
+    transform: translateX(-25.5vw) translateY(-160%);
+}
+.mtn2
+{
+    transform: translateX(-1.4vw) translateY(-150%);
+}
+.mtn3
+{
+    transform: translateX(14vw) translateY(-225%);
+}
+.mtn4
+{
+    transform: translateX(17.2vw) translateY(15%);
 }
 .ilePos
 {
