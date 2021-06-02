@@ -5,37 +5,78 @@ body
     height: 100%;
     background-color: #3A85DD;
 }
-.peak
+.peak1, .peak2, .peak3, .peak4
 {
     position: absolute;
-    padding: 3.5vw;
-    left: 50vw;
-    top: 50vh;
+    padding: 2.5vw;
+    top: 60vh;
     background: rgba(255, 0, 0, 0.5);
 }
+.iles
+{
+    transform: translateX(-100vw);
+}
+.peak1
+{
+    left: 50vw;
+}
+.peak2
+{
+    left: 150vw;
+}
+.peak3
+{
+    left: 250vw;
+}
+.peak4
+{
+    left: 350vw;
+}
+/* 1ère ile */
 .mtn1
 {
-    transform: translateX(-25.5vw) translateY(-160%);
+    transform: translateX(-18.8vw) translateY(-165%);
 }
 .mtn2
 {
-    transform: translateX(-1.4vw) translateY(-150%);
+    transform: translateX(-0.7vw) translateY(-155%);
 }
 .mtn3
 {
-    transform: translateX(14vw) translateY(-225%);
+    transform: translateX(10.6vw) translateY(-235%);
 }
 .mtn4
 {
-    transform: translateX(17.2vw) translateY(15%);
+    transform: translateX(13vw) translateY(15%);
+}
+/* 2ème ile */
+.mtn6
+{
+    transform: translateX(-21.6vw) translateY(-235%);
+}
+.mtn7
+{
+    transform: translateX(-17.5vw) translateY(0%);
+}
+.mtn8
+{
+    transform: translateX(2.8vw) translateY(-230%);
+}
+.mtn9
+{
+    transform: translateX(3.5vw) translateY(70%);
+}
+.mtn10
+{
+    transform: translateX(13.2vw) translateY(-85%);
 }
 .ilePos
 {
     position: absolute;
     left: 50vw;
-    top: 50vh;
+    top: 60vh;
     transform: translateX(-50%) translateY(-50%);
-    width: 80vw;
+    width: 60vw;
     margin: auto;
 }
 .ileDesign
