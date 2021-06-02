@@ -11,6 +11,7 @@ body
     padding: 2.5vw;
     top: 60vh;
     background: rgba(255, 0, 0, 0.5);
+    user-select: none;
 }
 /* .iles
 {
@@ -78,6 +79,7 @@ body
     transform: translateX(-50%) translateY(-50%);
     width: 60vw;
     margin: auto;
+    user-select: none;
 }
 .ileDesign
 {
