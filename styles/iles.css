@@ -12,10 +12,10 @@ body
     top: 60vh;
     background: rgba(255, 0, 0, 0.5);
 }
-.iles
+/* .iles
 {
-    transform: translateX(-100vw);
-}
+    transform: translateX(-200vw);
+} */
 .peak1
 {
     left: 50vw;
@@ -79,7 +79,7 @@ body
     width: 60vw;
     margin: auto;
 }
-/* .ileDesign
+.ileDesign
 {
-    left: 250vw;
-} */
+    left: 150vw;
+}
