@@ -13,10 +13,6 @@ body
     background: rgba(255, 0, 0, 0.5);
     user-select: none;
 }
-/* .iles
-{
-    transform: translateX(-200vw);
-} */
 .peak1
 {
     left: 50vw;
@@ -32,6 +28,24 @@ body
 .peak4
 {
     left: 350vw;
+}
+/* boutons scroll horizontal */
+.scrollLeft, .scrollRight
+{
+    position: absolute;
+    width: 7vw;
+    top: 60vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.7;
+}
+.scrollLeft
+{
+    left: 10vw;
+}
+.scrollRight
+{
+    left: 90vw;
 }
 /* 1ère ile */
 .mtn1
@@ -71,6 +85,48 @@ body
 {
     transform: translateX(13.2vw) translateY(-85%);
 }
+/* 3ème ile */
+.mtn11
+{
+    transform: translateX(-19vw) translateY(-145%);
+}
+.mtn12
+{
+    transform: translateX(-7vw) translateY(-260%);
+}
+.mtn13
+{
+    transform: translateX(-6.5vw) translateY(-45%);
+}
+.mtn14
+{
+    transform: translateX(12.4vw) translateY(-220%);
+}
+.mtn15
+{
+    transform: translateX(13vw) translateY(-45%);
+}
+/* 4ème ile */
+.mtn16
+{
+    transform: translateX(-21.4vw) translateY(60%);
+}
+.mtn17
+{
+    transform: translateX(-18vw) translateY(-140%);
+}
+.mtn18
+{
+    transform: translateX(2.6vw) translateY(-220%);
+}
+.mtn19
+{
+    transform: translateX(2.7vw) translateY(40%);
+}
+.mtn20
+{
+    transform: translateX(12.7vw) translateY(-55%);
+}
 .ilePos
 {
     position: absolute;
@@ -84,4 +140,12 @@ body
 .ileDesign
 {
     left: 150vw;
+}
+.ileCommunication
+{
+    left: 250vw;
+}
+.ileDevelopement
+{
+    left: 350vw;
 }
