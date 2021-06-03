@@ -9,24 +9,40 @@ body
     position: fixed;
     left: 50vw;
     transform: translateX(-50%);
-    width: 1500px;
-    max-width: 130vw;
-    max-height: 80vh;
+    width: 100vw;
     bottom: 0vh;
 }
-/* .etudes, .mission, .competence, .definition
+.etudes, .mission, .competence, .definition
 {
-    position: absolute;
-    background-color: rgba(255, 0, 0, 0.4);
-    margin: auto;
-    max-width: 130%;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    left: 50vw;
-    bottom: 15vh;
-    transform: translateX(-50%);
-    border: solid 0;
+    position: fixed;
+    background-color: rgba(255, 0, 0, 0.5);
+    bottom: 0vh;
     cursor: pointer;
-} */
+}
+.etudes
+{
+    left: 42.2vw;
+    padding-right: 8vw;
+    padding-top: 5vw;
+    transform: translateY(-29vw);
+}
+.mission
+{
+    left: 40vw;
+    padding-right: 13vw;
+    padding-top: 7.5vw;
+    transform: translateY(-21vw);
+}
+.competence
+{
+    left: 34vw;
+    padding-right: 25vw;
+    padding-top: 10vw;
+    transform: translateY(-10.5vw);
+}
+.definition
+{
+    left: 27vw;
+    padding-right: 40vw;
+    padding-top: 10vw;
+}

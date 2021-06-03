@@ -51,7 +51,7 @@ $(document).ready(function() {
     });
     $(".peak1, .peak2, .peak3, .peak4").on("click", function()
     {
-        localMtnIndex = $(this).index() - 1;
+        localMtnIndex = $(this).index() - 3;
         localStorage.setItem("mtnStorage", mtnIndex);
         localStorage.setItem("localMtnStorage", localMtnIndex);
         localStorage.setItem("ileStorage", ileIndex);
