@@ -32,9 +32,13 @@ $(document).ready(function() {
             ileIndex = 0;
         }
     })
-    $('a').on("click",function()
+    $(".peak1, .peak2, .peak3, .peak4").on("click",function()
     {
         // localStorage.setItem("ileIndexStorage", ileIndex);
-        console.log("r");
+        console.log($(this).css('transform'));
     });
+    // $(".peak1").on("click",function()
+    // {
+    //     $(".ileAudio").transition({width:'600vw'},1000,'ease');
+    // });
 });
