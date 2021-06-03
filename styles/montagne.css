@@ -1,0 +1,14 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    height: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(#ffffff, #C0C8FB);
+}
+.mountain
+{
+    position: fixed;
+    width: 100vw;
+    bottom: 0vh;
+}
