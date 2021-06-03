@@ -5,7 +5,8 @@ $(document).ready(function() {
         }
     });
     var ileIndex = 0;
-    var mtnIndex = 0;
+    var mtnIndex = 1;
+    var localMtnIndex = 1;
     $(".scrollLeft").on("click",function()
     {
         if (ileIndex != 0)
@@ -32,13 +33,28 @@ $(document).ready(function() {
             ileIndex = 0;
         }
     })
-    $(".peak1, .peak2, .peak3, .peak4").on("click",function()
+    $(".peak1").on("click",function()
     {
-        // localStorage.setItem("ileIndexStorage", ileIndex);
-        console.log($(this).css('transform'));
+        mtnIndex = $(this).index() - 1;
     });
-    // $(".peak1").on("click",function()
-    // {
-    //     $(".ileAudio").transition({width:'600vw'},1000,'ease');
-    // });
+    $(".peak2").on("click",function()
+    {
+        mtnIndex = $(this).index() + 3;
+    });
+    $(".peak3").on("click",function()
+    {
+        mtnIndex = $(this).index() + 8;
+    });
+    $(".peak4").on("click",function()
+    {
+        mtnIndex = $(this).index() + 13;
+    });
+    $(".peak1, .peak2, .peak3, .peak4").on("click", function()
+    {
+        localMtnIndex = $(this).index() - 1;
+        localStorage.setItem("mtnStorage", mtnIndex);
+        localStorage.setItem("localMtnStorage", localMtnIndex);
+        localStorage.setItem("ileStorage", ileIndex);
+        window.location.href = "montagne.html";
+    });
 });

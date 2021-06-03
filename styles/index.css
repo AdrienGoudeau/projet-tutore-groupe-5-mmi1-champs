@@ -77,6 +77,7 @@ body
 .ourGroup div
 {
     margin: 0 auto;
+    max-width: 200px;
     text-align: center;
 }
 .WelAlign div, .Start div

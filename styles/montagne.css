@@ -4,6 +4,7 @@ body
     margin: 0 auto;
     height: 100%;
     overflow-x: hidden;
+    overflow-y: visible;
     background: linear-gradient(#ffffff, #C0C8FB);
 }
 .mountain
