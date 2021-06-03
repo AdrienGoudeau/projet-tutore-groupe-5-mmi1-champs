@@ -10,7 +10,7 @@ body
     position: absolute;
     padding: 2.5vw;
     top: 60vh;
-    background: rgba(255, 0, 0, 0.5);
+    background: none;
     user-select: none;
 }
 .peak1

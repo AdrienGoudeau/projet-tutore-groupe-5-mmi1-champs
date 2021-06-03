@@ -3,13 +3,30 @@ body
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: visible;
-    background: linear-gradient(#ffffff, #C0C8FB);
 }
 .mountain
 {
     position: fixed;
-    width: 100vw;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 1500px;
+    max-width: 130vw;
+    max-height: 80vh;
     bottom: 0vh;
 }
+/* .etudes, .mission, .competence, .definition
+{
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.4);
+    margin: auto;
+    max-width: 130%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    left: 50vw;
+    bottom: 15vh;
+    transform: translateX(-50%);
+    border: solid 0;
+    cursor: pointer;
+} */
