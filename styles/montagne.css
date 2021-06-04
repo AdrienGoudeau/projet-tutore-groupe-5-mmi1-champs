@@ -12,14 +12,14 @@ body
     width: 100vw;
     bottom: 0vh;
 }
-.etudes, .mission, .competence, .definition
+.etude, .mission, .competence, .definition
 {
     position: fixed;
     background-color: rgba(255, 0, 0, 0.5);
     bottom: 0vh;
     cursor: pointer;
 }
-.etudes
+.etude
 {
     left: 42.2vw;
     padding-right: 8vw;
@@ -45,4 +45,16 @@ body
     left: 27vw;
     padding-right: 40vw;
     padding-top: 10vw;
+}
+.textbox
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 3vw;
+    padding: 1vw;
+    left: 72vw;
+    bottom: 15vw;
+    width: 25vw;
+    height: 25vw;
 }

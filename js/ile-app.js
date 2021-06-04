@@ -55,6 +55,6 @@ $(document).ready(function() {
         localStorage.setItem("mtnStorage", mtnIndex);
         localStorage.setItem("localMtnStorage", localMtnIndex);
         localStorage.setItem("ileStorage", ileIndex);
-        window.location.href = "montagne.html";
+        window.location.href = "mountain.php";
     });
 });

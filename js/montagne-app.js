@@ -11,4 +11,8 @@ $(document).ready(function() {
         case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
         default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
     }
+    // $(".etude, .mission, .competence, .definition").on("click", function()
+    // {
+    //     $(".textbox").toggle();
+    // });
 });

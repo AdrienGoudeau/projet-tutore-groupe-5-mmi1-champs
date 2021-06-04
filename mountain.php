@@ -15,9 +15,10 @@
 </head>
 <body>
     <img class="mountain">
-    <div class="etudes"></div>
+    <div class="etude"></div>
     <div class="mission"></div>
     <div class="competence"></div>
     <div class="definition"></div>
+    <div class="textbox"></div>
 </body>
 </html>
