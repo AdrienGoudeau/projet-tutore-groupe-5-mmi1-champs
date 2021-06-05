@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+    $nom_metier="";
+    $salaire="";
+    //connexion Base de données
+    $link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=agoudeau_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    ?>
     <link rel="stylesheet" href="styles/montagne.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
