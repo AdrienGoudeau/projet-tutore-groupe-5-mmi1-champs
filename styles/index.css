@@ -44,13 +44,13 @@ body
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.contact
+.Contact
 {
     background: linear-gradient(0.25turn, #5B3D98, #7E57CA, #5B3D98);
     display: block;
     text-align: center;
 }
-.contact img
+.Contact img
 {
     max-width: 80%;
     padding-top: 25px;
@@ -166,7 +166,7 @@ p, h1
     width: 100%;
     transform: translateY(-10%);
 }
-a
+.discover, .begin
 {
     display: inline-block;
     border: solid 5px;
@@ -178,7 +178,7 @@ a
     font-size: 2em;
     transition: 0.3s;
 }
-a:hover
+.discover:hover, .begin:hover
 {
     background-color: white;
     color:#6B45A6;
@@ -186,4 +186,40 @@ a:hover
     transition: 0.3s;
     padding-left: 70px;
     padding-right: 70px;
+}
+.topnav
+{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #271b3f;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;;
+}
+/* Change the color of links on hover */
+.topnav a:hover
+{
+background-color: white;
+color: black;
+}
+/* Add an active class to highlight the current page */
+.topnav a.active
+{
+background-color:goldenrod;
+color: black;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon
+{
+display: none;
 }
