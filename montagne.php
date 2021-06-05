@@ -6,11 +6,11 @@
     $nom_metier="";
     $salaire="";
     //connexion Base de données
-    $link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=agoudeau_db', 'root', '', array
-(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    $link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=agoudeau_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
     //recupèrez l'id du metier dans l'url ... montagne.php?id=18 (variable en GET)
     $id = ... 
     //envoi requete SQL
+
     //SELECT ... 
     //WHERE id=18 
     
@@ -26,7 +26,7 @@
     //}
     //$req = null;
     //echo '</ul>';
-    //WHILE $data=... 
+    //WHILE $data=...
     $nom_metier=$data["nom"];
     
     
