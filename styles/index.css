@@ -94,6 +94,7 @@ body
 {
     font-size: 1.5em;
     margin-top: -20px;
+    height: 110px;
 }
 .ourGroup div h1
 {
@@ -104,6 +105,37 @@ body
 {
     width: 150px;
     height: auto;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+.ourGroup div img:hover
+{
+    width: 165px;
+    border-radius: 25%;
+    transition-duration: 0.3s;
+}
+.ourGroup div a
+{
+    display: inline-block;
+    border: solid 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-size: 1.25em;
+    transition: 0.3s;
+}
+.ourGroup div a:hover
+{
+    background-color: white;
+    color:#6B45A6;
+    border: solid 5px white;
+    transition: 0.3s;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 p, h1
 {
