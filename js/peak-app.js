@@ -2,6 +2,7 @@ $(document).ready(function() {
     var ileIndex = localStorage.getItem("ileStorage");
     var mtnIndex = localStorage.getItem("mtnStorage");
     var localMtnIndex = localStorage.getItem("localMtnStorage");
+    console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
     switch (localMtnIndex)
     {
         case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
