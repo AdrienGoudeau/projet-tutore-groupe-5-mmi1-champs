@@ -75,6 +75,7 @@ body
     left: 12vw;
     top: 11vw;
     cursor: pointer;
+    opacity: 0;
 }
 .north
 {

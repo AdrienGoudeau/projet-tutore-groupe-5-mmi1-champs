@@ -114,7 +114,7 @@ body
     border-radius: 25%;
     transition-duration: 0.3s;
 }
-.ourGroup div a
+.classic
 {
     display: inline-block;
     border: solid 5px;
@@ -128,7 +128,7 @@ body
     font-size: 1.25em;
     transition: 0.3s;
 }
-.ourGroup div a:hover
+.classic:hover
 {
     background-color: white;
     color:#6B45A6;
@@ -254,4 +254,27 @@ color: black;
 .topnav .icon
 {
 display: none;
+}
+.interactive
+{
+    display: inline-block;
+    border: solid 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: gold;
+    font-size: 1.25em;
+    transition: 0.3s;
+}
+.interactive:hover
+{
+    background-color: gold;
+    color:#6B45A6;
+    border: solid 5px gold;
+    transition: 0.3s;
+    padding-left: 30px;
+    padding-right: 30px;
 }

@@ -7,7 +7,8 @@ $(document).ready(function() {
     var ileIndex = 0;
     var mtnIndex = 1;
     var localMtnIndex = 1;
-    var compShow = 1;
+    var compShow = 0;
+    $(".north, .south, .east, .west").hide();
     //scroll horizontal
     $(".scrollLeft").on("click",function()
     {
