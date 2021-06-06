@@ -15,4 +15,18 @@ $(document).ready(function() {
     // {
     //     $(".textbox").toggle();
     // });
-});
+
+    $(this).on("click",function(){
+        var cat = null;
+        if($(this).hasClass("etude")){
+            cat = 1;
+        }if($(this).hasClass("mission")){
+            cat = 2;
+        }if($(this).hasClass("competence")){
+            cat = 3;
+        }if($(this).hasClass("definition")){
+            cat = 4;
+        }
+        console.log(cat)
+    }) 
+})
