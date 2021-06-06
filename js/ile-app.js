@@ -81,19 +81,19 @@ $(document).ready(function() {
     //obtient le numéro de la montagne lors du clic
     $(".peak1").on("click",function()
     {
-        mtnIndex = $(this).index() - 1;
+        mtnIndex = $(this).index() - 3;
     });
     $(".peak2").on("click",function()
     {
-        mtnIndex = $(this).index() + 3;
+        mtnIndex = $(this).index() + 1;
     });
     $(".peak3").on("click",function()
     {
-        mtnIndex = $(this).index() + 8;
+        mtnIndex = $(this).index() + 6;
     });
     $(".peak4").on("click",function()
     {
-        mtnIndex = $(this).index() + 13;
+        mtnIndex = $(this).index() + 11;
     });
     $(".peak1, .peak2, .peak3, .peak4").on("click", function()
     {
