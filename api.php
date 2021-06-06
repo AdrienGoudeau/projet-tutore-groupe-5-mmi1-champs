@@ -2,7 +2,7 @@
 // Appel de l'API : api.php?mtn=b&cat=a
 header('Content-Type: application/json');
 // Connexion à la base de données
-$link = new PDO('mysql:host=localhost;dbname=projet tut bd', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+$link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=projet_tut_2021', 'agoudeau_db', 'PCSCGIFA18a', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
 // Récupérer la requête transmise en GET
 $mtn = "";
