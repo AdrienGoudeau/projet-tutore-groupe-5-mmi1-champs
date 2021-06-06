@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     var ileIndex = localStorage.getItem("ileStorage");
     var mtnIndex = localStorage.getItem("mtnStorage");
     var localMtnIndex = localStorage.getItem("localMtnStorage");
@@ -11,6 +12,7 @@ $(document).ready(function() {
         case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
         case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
         default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        console.log("test")
     }
     // $(".etude, .mission, .competence, .definition").on("click", function()
     // {
@@ -28,7 +30,5 @@ $(document).ready(function() {
         }if($(this).hasClass("definition")){
             cat = 4;
         }
-        console.log(cat);
-        console.log("hello");
     }) 
 })
