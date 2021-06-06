@@ -1,0 +1,57 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+    background-color: #c99a00;
+    text-justify: auto;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.tout{
+    width: 800px;
+    background-color: white;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px #695f3e;
+    padding: 20px;
+    border-radius: 3%;
+    border: solid 1rem #4049ca;
+}
+h1{
+    height: 3rem;
+    text-align: center;
+    color: #4049ca;
+}
+
+h2{
+    height: 2.5rem;
+    text-align: center;
+    color: #4049ca;
+    border-bottom: solid 5px #4049ca;
+}
+
+h3{
+    height: 2rem;
+    text-align: center;
+    color: #4049ca;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    border-bottom: solid 5px #4049ca;
+}
+
+h4{
+    height: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact{
+    color: #4049ca;
+}
+
+ul{
+    padding-bottom: 2rem;
+}
