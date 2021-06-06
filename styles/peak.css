@@ -15,7 +15,6 @@ body
 .etude, .mission, .competence, .definition
 {
     position: fixed;
-    background-color: rgba(255, 0, 0, 0.5);
     bottom: 0vh;
     cursor: pointer;
 }
