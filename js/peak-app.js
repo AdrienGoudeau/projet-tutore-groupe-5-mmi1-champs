@@ -19,16 +19,29 @@ $(document).ready(function() {
     //     $(".textbox").toggle();
     // });
 
-    $(this).on("click",function(){
+    $(".etude, .mission, .competence, .definition").on("click",function(){
         var cat = null;
         if($(this).hasClass("etude")){
             cat = 1;
-        }if($(this).hasClass("mission")){
-            cat = 2;
-        }if($(this).hasClass("competence")){
-            cat = 3;
-        }if($(this).hasClass("definition")){
-            cat = 4;
+            console.log(cat);
         }
-    }) 
+        if($(this).hasClass("mission")){
+            cat = 2;
+            console.log(cat);
+        }
+        if($(this).hasClass("competence")){
+            cat = 3;
+            console.log(cat);
+        }
+        if($(this).hasClass("definition")){
+            cat = 4;
+            console.log(cat);
+        }
+        $.get("api.php?mtn="+mtnIndex).done(function(data){
+            // Récupération des résultats de la requête
+            $("#textbox").html("");
+            $("#textbox").append("<p>"+data.definition+"</p>");
+            console.log("test")
+        })
+    })
 })
