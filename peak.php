@@ -19,8 +19,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
     </style>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.transit.min.js"></script>
     <SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></SCRIPT>
     <script type="text/javascript" src="peak-app.js"></script>
     <title>Montagne</title>

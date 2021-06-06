@@ -22,28 +22,27 @@ $(document).ready(function() {
         var cat = null;
         if($(this).hasClass("etude")){
             cat = "salaire";
-            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
+            console.log("api.php?mtn="+mtnIndex);
         }
         if($(this).hasClass("mission")){
             cat = "mission";
-            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
+            console.log("api.php?mtn="+mtnIndex);
         }
         if($(this).hasClass("competence")){
             cat = "competences";
-            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
+            console.log("api.php?mtn="+mtnIndex);
         }
         if($(this).hasClass("definition")){
             cat = "definition";
-            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
+            console.log("api.php?mtn="+mtnIndex);
+            //+"&cat="+cat
         }
-        $.get("api.php?mtn="+mtnIndex+"&cat="+cat).done(function(data){
+        $.get("api.php?mtn="+mtnIndex).done(function(data){
             // Récupération des résultats de la requête
-            var i=0;
-            while(i<data.length){
-            $("#textbox").html("");
-            $("#textbox").append(data);
-            i++;
-            }
+            $(".textbox").html("");
+            $(".textbox").append(+data.mission);
+            //$(".textbox").append("");
+            console.log(data);
         })
     })
 })
