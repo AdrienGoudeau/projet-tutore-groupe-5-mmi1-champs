@@ -1,5 +1,111 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#444444, #222222);
+}
+.face-align, .name-align, .bottom-container
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+p
+{
+    color: white;
+}
+.face-align
+{
+    left: 20vw;
+    top: 26vh;
+}
 .face
 {
+    width: 350px;
+    max-width: 35vh;
     border-radius: 50%;
-    border: solid 20px black;
+    border: solid 20px #4770DB;
+}
+.na-title
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.na-text
+{
+    font-size: 1.75rem;
+    text-align: center;
+    overflow: hidden;
+}
+.name-align
+{
+    left: 70vw;
+    top: 26vh;
+    width: 1000px;
+    max-width: 40vw;
+    max-height: 35vh;
+    background-color: rgba(41, 158, 88, 0.5);
+    border-left: solid 20px #299E58;
+    border-right: solid 20px #299E58;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow: auto;
+}
+.information, .formation, .competence, .interet
+{
+    position: absolute;
+    width: 650px;
+    height: 500px;
+    max-width: 60vw;
+    max-height: 40vh;
+    left: 50vw;
+    top: 75vh;
+    padding-top: 15px;
+    padding-left: 50px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(41, 158, 88, 0.5);
+    border-left: solid 20px #299E58;
+    border-right: solid 20px #299E58;
+    border-radius: 20px;
+    overflow: auto;
+}
+.formation
+{
+    left: 150vw;
+}
+.competence
+{
+    left: 250vw;
+}
+.interet
+{
+    left: 350vw;
+}
+.goLeft, .goRight
+{
+    position: absolute;
+    width: 70px;
+    max-width: 10vw;
+    transform: translate(-50%, -50%);
+    top: 75vh;
+    z-index: 1;
+}
+.goLeft
+{
+    left: 7vw;
+}
+.goRight
+{
+    left: 93vw;
+}
+.sautLigne
+{
+    font-size: 3.5rem;
+}
+.leTitre
+{
+    font-size: 2rem;
 }
