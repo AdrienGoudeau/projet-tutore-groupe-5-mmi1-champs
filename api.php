@@ -2,14 +2,14 @@
 // Appel de l'API : api.php?mtn=b&cat=a
 header('Content-Type: application/json');
 // Connexion à la base de données
-$link = new PDO('mysql:host=localhost;dbname=projet tut bd', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+$link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=projet_tut_2021', 'agoudeau_db', 'PCSCGIFA18a', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
 // Récupérer la requête transmise en GET
 $mtn = "";
 if(isset($_GET["mtn"])){
     $mtn = $_GET["mtn"];
 }
-    $sql = "SELECT mission FROM metier WHERE id = :mtn;";
+    $sql = "SELECT mission FROM projetTut2021_metier WHERE id = :mtn;";
     // On prépare la requête avant l'envoi :
     $req = $link -> prepare($sql);
     // On exécute la requête en insérant la valeur transmise en GET
