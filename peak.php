@@ -7,6 +7,13 @@
     <?php
     //connexion Base de données
     include("connexion_base.php");
+
+    //$sql = "SELECT competences FROM metier WHERE id = 1";
+
+   // $req = $link;
+    //$req = $link -> prepare($sql);
+   // $req -> execute();
+   // $competences = $data["competences"];
     ?>
     <link rel="stylesheet" href="styles/peak.css">
     <style>
@@ -14,7 +21,8 @@
     </style>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
-    <script type="text/javascript" src="js/peak-app.js"></script>
+    <SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></SCRIPT>
+    <script type="text/javascript" src="peak-app.js"></script>
     <title>Montagne</title>
 </head>
 <body>

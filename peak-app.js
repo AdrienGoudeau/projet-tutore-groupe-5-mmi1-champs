@@ -12,7 +12,6 @@ $(document).ready(function() {
         case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
         case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
         default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
-        console.log("test")
     }
     // $(".etude, .mission, .competence, .definition").on("click", function()
     // {
@@ -22,26 +21,29 @@ $(document).ready(function() {
     $(".etude, .mission, .competence, .definition").on("click",function(){
         var cat = null;
         if($(this).hasClass("etude")){
-            cat = 1;
-            console.log(cat);
+            cat = "salaire";
+            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
         }
         if($(this).hasClass("mission")){
-            cat = 2;
-            console.log(cat);
+            cat = "mission";
+            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
         }
         if($(this).hasClass("competence")){
-            cat = 3;
-            console.log(cat);
+            cat = "competences";
+            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
         }
         if($(this).hasClass("definition")){
-            cat = 4;
-            console.log(cat);
+            cat = "definition";
+            console.log("api.php?mtn="+mtnIndex+"&cat="+cat);
         }
-        $.get("api.php?mtn="+mtnIndex).done(function(data){
+        $.get("api.php?mtn="+mtnIndex+"&cat="+cat).done(function(data){
             // Récupération des résultats de la requête
+            var i=0;
+            while(i<data.length){
             $("#textbox").html("");
-            $("#textbox").append("<p>"+data.definition+"</p>");
-            console.log("test")
+            $("#textbox").append(data);
+            i++;
+            }
         })
     })
 })
