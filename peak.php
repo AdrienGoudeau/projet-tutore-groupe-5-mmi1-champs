@@ -8,7 +8,7 @@
     $nom_metier="";
     $salaire="";
     //connexion Base de données
-    $link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=agoudeau_db', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    include("connexion_base.php");
     ?>
     <link rel="stylesheet" href="styles/peak.css">
     <style>
