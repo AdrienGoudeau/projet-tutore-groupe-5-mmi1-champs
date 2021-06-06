@@ -28,6 +28,7 @@ $(document).ready(function() {
         }if($(this).hasClass("definition")){
             cat = 4;
         }
-        console.log(cat)
+        console.log(cat);
+        console.log("hello");
     }) 
 })
