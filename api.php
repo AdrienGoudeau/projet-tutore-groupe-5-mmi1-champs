@@ -9,7 +9,7 @@ $mtn = "";
 if(isset($_GET["mtn"])){
     $mtn = $_GET["mtn"];
 }
-    $sql = "SELECT mission FROM metier WHERE id = :mtn;";
+    $sql = "SELECT mission FROM projetTut2021_metier WHERE id = :mtn;";
     // On prépare la requête avant l'envoi :
     $req = $link -> prepare($sql);
     // On exécute la requête en insérant la valeur transmise en GET
