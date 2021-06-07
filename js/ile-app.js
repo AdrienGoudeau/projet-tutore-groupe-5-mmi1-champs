@@ -90,11 +90,11 @@ $(document).ready(function() {
     });
     $(".peak3").on("click",function()
     {
-        mtnIndex = $(this).index() + 6;
+        mtnIndex = $(this).index() + 5;
     });
     $(".peak4").on("click",function()
     {
-        mtnIndex = $(this).index() + 11;
+        mtnIndex = $(this).index() + 10;
     });
     $(".peak1, .peak2, .peak3, .peak4").on("click", function()
     {
@@ -102,6 +102,6 @@ $(document).ready(function() {
         localStorage.setItem("mtnStorage", mtnIndex);
         localStorage.setItem("localMtnStorage", localMtnIndex);
         localStorage.setItem("ileStorage", ileIndex);
-        window.location.href = "peak.php";
+        window.location.href = "peak" + mtnIndex + ".html";
     });
 });

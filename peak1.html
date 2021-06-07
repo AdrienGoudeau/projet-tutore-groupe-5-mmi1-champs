@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/peak.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="javascript" src="js/jquery.transit.min.js"></script>
+    <title>Montagne</title>
+</head>
+<script>
+    $(document).ready(function() {
+        var ileIndex = localStorage.getItem("ileStorage");
+        var mtnIndex = localStorage.getItem("mtnStorage");
+        var localMtnIndex = localStorage.getItem("localMtnStorage");
+        $(".textbox").hide();
+        console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
+        switch (localMtnIndex)
+        {
+            case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
+            case "2": $(".mountain").attr("src","images/montagne-purple.svg"); break;
+            case "3": $(".mountain").attr("src","images/montagne-green.svg"); break;
+            case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
+            case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
+            default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        }
+        $(".salaire, .mission, .competence, .definition").on("click", function()
+        {
+            $(".textbox").show();
+            //texte qui sera affiché en cliquant sur une des 4 catégories. change le texte comme ceci: $(catégorie).html("METTRE LE TEXTE ICI")
+            switch($(this).attr("class"))
+            {
+                case "salaire":
+                    $(".textbox").html("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore tenetur omnis mollitia sapiente pariatur numquam ipsa veritatis consequatur molestiae asperiores aliquam laboriosam, hic similique eos necessitatibus est. Architecto, corporis magnam.");
+                    break;
+                case "mission":
+                    $(".textbox").html("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.");
+                    break;
+                case "competence":
+                    $(".textbox").html("Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.");
+                    break;
+                case "definition":
+                    $(".textbox").html("Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.");
+                    break;
+            }
+        })
+        $(".goBack").on("click", function()
+        {
+            window.history.back();
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <img class="mountain">
+        <div class="salaire"></div>
+        <div class="mission"></div>
+        <div class="competence"></div>
+        <div class="definition"></div>
+        <p class="textbox"></p>
+        <a class="goBack" href="#">Revenir à la carte</a>
+    </div>
+</body>
+</html>

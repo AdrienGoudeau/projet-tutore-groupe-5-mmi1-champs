@@ -3,6 +3,7 @@ body
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     height: 100%;
+    background: #2d6ea3;
 }
 .mountain
 {
@@ -11,14 +12,15 @@ body
     transform: translateX(-50%);
     width: 100vw;
     bottom: 0vh;
+    background: linear-gradient(#2d6ea3, #bde2ff);
 }
-.etude, .mission, .competence, .definition
+.salaire, .mission, .competence, .definition
 {
     position: fixed;
     bottom: 0vh;
     cursor: pointer;
 }
-.etude
+.salaire
 {
     left: 42.2vw;
     padding-right: 8vw;
@@ -50,10 +52,34 @@ body
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    word-wrap: break-word;
+    color: white;
+    font-size: 1rem;
+    padding: 5vw;
+    overflow: auto;
     border-radius: 3vw;
     padding: 1vw;
     left: 72vw;
     bottom: 15vw;
     width: 25vw;
-    height: 25vw;
+    height: 30vw;
+}
+.goBack
+{
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: solid 5px black;
+    border-radius: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-duration: 0.3s;
+    padding: 20px;
+}
+.goBack:hover
+{
+    background-color: black;
+    transition-duration: 0.3s;
 }

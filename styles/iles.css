@@ -12,6 +12,7 @@ body
     top: 60vh;
     background: none;
     user-select: none;
+    background-color: rgba(255, 0, 0, 0.5);
 }
 .peak1
 {
@@ -118,60 +119,60 @@ body
 {
     transform: translateX(-17.5vw) translateY(0%);
 }
-.mtn7
+/* .mtn7
 {
     transform: translateX(2.8vw) translateY(-230%);
-}
-.mtn8
+} */
+.mtn7
 {
     transform: translateX(3.5vw) translateY(70%);
 }
-.mtn9
+.mtn8
 {
     transform: translateX(13.2vw) translateY(-85%);
 }
 /* 3ème ile */
-.mtn10
+.mtn9
 {
     transform: translateX(-19vw) translateY(-145%);
 }
-.mtn11
+.mtn10
 {
     transform: translateX(-7vw) translateY(-260%);
 }
-.mtn12
+.mtn11
 {
     transform: translateX(-6.5vw) translateY(-45%);
 }
-.mtn13
+.mtn12
 {
     transform: translateX(12.4vw) translateY(-220%);
 }
-.mtn14
+.mtn13
 {
     transform: translateX(13vw) translateY(-45%);
 }
 /* 4ème ile */
-.mtn15
+.mtn14
 {
     transform: translateX(-21.4vw) translateY(60%);
 }
-.mtn16
+.mtn15
 {
     transform: translateX(-18vw) translateY(-140%);
 }
-.mtn17
+.mtn16
 {
     transform: translateX(2.6vw) translateY(-220%);
 }
-.mtn18
+.mtn17
 {
     transform: translateX(2.7vw) translateY(40%);
 }
-.mtn19
+/* .mtn19
 {
     transform: translateX(12.7vw) translateY(-55%);
-}
+} */
 .ilePos
 {
     position: absolute;
