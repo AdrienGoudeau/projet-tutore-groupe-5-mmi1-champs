@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/peak.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="javascript" src="js/jquery.transit.min.js"></script>
+    <title>Montagne Directeur Artistiqe  </title>
+</head>
+<script>
+    $(document).ready(function() {
+        var ileIndex = localStorage.getItem("ileStorage");
+        var mtnIndex = localStorage.getItem("mtnStorage");
+        var localMtnIndex = localStorage.getItem("localMtnStorage");
+        $(".textbox").hide();
+        console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
+        switch (localMtnIndex)
+        {
+            case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
+            case "2": $(".mountain").attr("src","images/montagne-purple.svg"); break;
+            case "3": $(".mountain").attr("src","images/montagne-green.svg"); break;
+            case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
+            case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
+            default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        }
+        $(".salaire, .mission, .competence, .definition").on("click", function()
+        {
+            $(".textbox").show();
+            //texte qui sera affiché en cliquant sur une des 4 catégories. change le texte comme ceci: $(catégorie).html("METTRE LE TEXTE ICI")
+            switch($(this).attr("class"))
+            {
+                case "salaire":
+                    $(".textbox").html(" Salaire débutant : 2500€ par mois  <br> Salaire expérimenté : 4500€ par mois   ");
+                    break;
+                case "mission":
+                    $(".textbox").html("Sous la direction d'un directeur de création et avec l'aide d'un concepteur-rédacteur, il encadre une équipe. Le directeur artistique doit tenir compte des demandes de ses clients pour concevoir la charte graphique (public visé, image de marque...). Après avoir analysé les besoins d'un client, il réfléchit à un concept et répartit le travail entre les graphistes, illustrateurs, photographes, et autres membres de son équipe. Il supervise les étapes de la création, soumet des propositions aux différents clients, assure ensuite le suivi technique et retravaille si besoin le concept. Lors de la phase de conception, avec son équipe il élabore l’identité visuelle et la charte graphique (couleurs, typographies, visuels, fonctionnalités…) et réalise des maquettes en veillant à l’ergonomie et l’accessibilité des différents éléments. Il peut également travailler sur les illustrations et les animations visuelles et sonores qui vont permettre d’animer le site. Lorsque la charte graphique est validée par le client, la fabrication des pages (ou des écrans) peut commencer. Dès que la phase de production a commencée, il supervise les différents intervenants et peut participer activement à la réalisation. Il vérifie également la conformité des éléments produits avec la demande du client et les différentes normes d’ergonomie et d’accessibilité.");
+                    break;
+                case "competence":
+                    $(".textbox").html("Le directeur artistique est créatif, bouillonnant de mille idées! Egalement sensible aux questions d'esthétisme et au sens précis des mots, passionné des nouvelles tendances et plein de curiosité. Rigoureux et bon gestionnaire le directeur artistique est également organisé et ponctuel, il est à l'aise dans la gestion de projet et l'encadrement d'équipes. Pour mieux échanger avec des profils variés (design, techniques, commerciaux, marketing …) alors mieux à avoir en termes relationnel un bon contact avec son équipe pour répondre ainsi aux besoins clients. Il est de bonne écoute et aimable en toute circonstance et doit gérer au mieux les frustrations. Généralement il a un bon coup de crayon, une maîtrise parfaite des outils de création par ordinateur et une certaine aisance à l'oral pour monter et défendre ses projets. Une bonne maîtrise des technologies sont nécessaires aux étapes de maquettage et de réalisation des animations, alors un plus et un bon bagage en arts et esthétisme est important pour la réalisation d’un travail parfait sur les concepts artistiques. ");
+                    break;
+                case "definition":
+                    $(".textbox").html("Le directeur artistique web s’occupe de toute la partie conception et réalisation graphique et artistique d’un projet. Il est avant tout le créatif et le responsable de l’identité visuelle d’une marque et de son évolution sur Internet. La décision lui revient plus souvent sur le déploiement visuel et la déclinaison de la charte graphique sur le Web. C'est lui qui définit l'apparence générale du projet et détermine le choix des couleurs, des typographies, l'animation visuelle et sonore. ");
+                    break;
+            }
+        })
+        $(".goBack").on("click", function()
+        {
+            window.history.back();
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <img class="mountain">
+        <div class="salaire"></div>
+        <div class="mission"></div>
+        <div class="competence"></div>
+        <div class="definition"></div>
+        <p class="textbox"></p>
+        <a class="goBack" href="#">Revenir à la carte</a>
+    </div>
+</body>
+</html>

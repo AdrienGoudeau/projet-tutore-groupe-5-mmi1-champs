@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/peak.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="javascript" src="js/jquery.transit.min.js"></script>
+    <title>Montagne Monteur Vidéo </title>
+</head>
+<script>
+    $(document).ready(function() {
+        var ileIndex = localStorage.getItem("ileStorage");
+        var mtnIndex = localStorage.getItem("mtnStorage");
+        var localMtnIndex = localStorage.getItem("localMtnStorage");
+        $(".textbox").hide();
+        console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
+        switch (localMtnIndex)
+        {
+            case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
+            case "2": $(".mountain").attr("src","images/montagne-purple.svg"); break;
+            case "3": $(".mountain").attr("src","images/montagne-green.svg"); break;
+            case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
+            case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
+            default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        }
+        $(".salaire, .mission, .competence, .definition").on("click", function()
+        {
+            $(".textbox").show();
+            //texte qui sera affiché en cliquant sur une des 4 catégories. change le texte comme ceci: $(catégorie).html("METTRE LE TEXTE ICI")
+            switch($(this).attr("class"))
+            {
+                case "salaire":
+                    $(".textbox").html("Salaire débutant : 1500 -1800€  par mois  <br> Salaire expérimenté : 2600 et 3100 € par mois  ");
+                    break;
+                case "mission":
+                    $(".textbox").html("En contact direct avec le réalisateur et sous ses directives, il visionne l'ensemble des images tournées et sélectionne minutieusement les meilleures prises, les plans les plus jolis(ce qu’on appelle aussi le dérushage). Ensuite, il va pouvoir commencer son premier montage, auquel il rajoute, après plusieurs visionnages, d’éventuels effets. Enfin, il pourra ajouter une bande-son aux images, sans oublier de la synchroniser le tout. Avec sa formation en montage vidéo, ce professionnel de l’audiovisuel est donc en mesure de créer un contenu mixant tout un tas d’éléments.");
+                    break;
+                case "competence":
+                    $(".textbox").html("Les monteurs vidéo doivent évidemment avoir de grandes connaissances techniques et une familiarité avec les logiciels de montage audio et vidéo. Ils doivent scrupuleusement suivre et respecter les directions du réalisateur, ils doivent aussi être force de proposition et de créativité. Comme le travail peut souvent demander des heures à passer devant son écran, ils doivent faire preuve d'une grande concentration. Pour se lancer dans une carrière de Monteur vidéo, mieux vaut être passionné par le monde de la vidéo dans sa globalité : film, série, émission, Youtube, etc… ! Avoir une fibre artistique sera également un bon atout, car elle permet d’apprécier ou de décerner les différentes prises de vues et d’apporter une touche plus personnelle dans les montages (films réalisés). Dans certaines situations comme les délais et les engagements peuvent être très courts, Le travail l'oblige à se doter d'une bonne organisation et d'une solide résistance au stress. On peut évoquer le travail en équipe, car cela demande aussi une bonne capacité à communiquer afin de créer un produit correspondant le plus possible aux demandes.");
+                    break;
+                case "definition":
+                    $(".textbox").html("Pour qu’une vidéo atteigne son objectif, soit qu’elle soit pertinente, percutante et même virale, il est nécessaire de réaliser un montage de qualité et de bien choisir le sujet. Le monteur vidéo est ainsi en charge de la cohérence et du rythme d'un film, d'un reportage. Le monteur vidéo peut exercer dans plusieurs métiers, comme les chaînes de télévision, dans l’évènementiel, le cinéma ou pour des sites Internet et réseaux sociaux. Il peut également travailler dans le domaine de la communication en réalisant des reportages d’entreprises. Il choisit les images qui feront sens et les assemble pour rendre le produit final fidèle aux désirs du réalisateur. Un métier à la fois technique et créatif. Un monteur vidéo à la tâche de monter des vidéos qui permettent de mettre en avant une marque, un slogan, un jeu vidéo, un message publicitaire, une entreprise...");
+                    break;
+            }
+        })
+        $(".goBack").on("click", function()
+        {
+            window.history.back();
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <img class="mountain">
+        <div class="salaire"></div>
+        <div class="mission"></div>
+        <div class="competence"></div>
+        <div class="definition"></div>
+        <p class="textbox"></p>
+        <a class="goBack" href="#">Revenir à la carte</a>
+    </div>
+</body>
+</html>
