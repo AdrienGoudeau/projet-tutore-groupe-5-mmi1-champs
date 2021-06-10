@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/peak.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="javascript" src="js/jquery.transit.min.js"></script>
+    <title>Montagne Gestionnaire de Réseau  </title>
+</head>
+<script>
+    $(document).ready(function() {
+        var ileIndex = localStorage.getItem("ileStorage");
+        var mtnIndex = localStorage.getItem("mtnStorage");
+        var localMtnIndex = localStorage.getItem("localMtnStorage");
+        $(".textbox").hide();
+        console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
+        switch (localMtnIndex)
+        {
+            case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
+            case "2": $(".mountain").attr("src","images/montagne-purple.svg"); break;
+            case "3": $(".mountain").attr("src","images/montagne-green.svg"); break;
+            case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
+            case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
+            default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        }
+        $(".salaire, .mission, .competence, .definition").on("click", function()
+        {
+            $(".textbox").show();
+            //texte qui sera affiché en cliquant sur une des 4 catégories. change le texte comme ceci: $(catégorie).html("METTRE LE TEXTE ICI")
+            switch($(this).attr("class"))
+            {
+                case "salaire":
+                    $(".textbox").html("Salaire débutant : 2500€ par mois  <br> Salaire expérimenté : 3700€ par mois ");
+                    break;
+                case "mission":
+                    $(".textbox").html("Il a pour mission la bonne gestion et le bon fonctionnement du réseau au sein d’une entreprise, Il intervient aussi en cas de problème technique et signale les dysfonctionnementsà l'ingénieurréseaux. L'administrateur réseau veille au bon fonctionnement des systèmes de télécommunications grâce auxquels les différents sites ou bureaux d'une entreprise échangent des informations. C'est lui qui réceptionne et installe les matériels informatiques et de télécommunications en veillant à leur compatibilité. Il s’occupe dela maintenance, du réglage des paramètres et la sécurisationdes réseaux informatiques. ");
+                    break;
+                case "competence":
+                    $(".textbox").html("Le gestionnaire de réseau doit connaitre les différents protocoles réseau servant à la transmission et à la récupération de l’information entre les ordinateurs. De plus, il doit avoir une connaissance approfondie des réseaux, des systèmes d’exploitation et des systèmes de sécurité. Le gestionnaire de réseau doit avoir une capacité de gérer les risques concernant la gestion de la sécurité des données et de résoudre les problèmes rencontrés. Il doit connaître les principaux logiciels utilisés par l’entreprise comme les logiciels de bureautique et de bases de données. Afin, de mieux configurer le système de réseau, un gestionnaire de réseau doit comprendre le fonctionnement les flux d’informations de l’entreprise. Avec le développement d'Internet et du commerce électronique des nouvelles perspectives s’ouvre pour ce métier.   ");
+                    break;
+                case "definition":
+                    $(".textbox").html("Le Gestionnaire Réseau, appelé aussi Administrateur Système, Administrateur Réseau ou Network Administrator, est garant de l'accès au système d'information et de sa sécurité, il/elle prévient les anomalies éventuelles, participe au développement et à la maintenance des applications informatiques. Il/elle intervient également pour rétablir le service en cas de problème. Un poste clé dans de nombreuses entreprises industrielles. L'administrateur réseau est garant du bon fonctionnement et de la qualité du réseau de l'entreprise. Il participe à son évolution et pilote l'accès aux utilisateurs. ");
+                    break;
+            }
+        })
+        $(".goBack").on("click", function()
+        {
+            window.history.back();
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <img class="mountain">
+        <div class="salaire"></div>
+        <div class="mission"></div>
+        <div class="competence"></div>
+        <div class="definition"></div>
+        <p class="textbox"></p>
+        <a class="goBack" href="#">Revenir à la carte</a>
+    </div>
+</body>
+</html>

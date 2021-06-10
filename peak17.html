@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/peak.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="javascript" src="js/jquery.transit.min.js"></script>
+    <title>Montagne Développeur Full Stack  </title>
+</head>
+<script>
+    $(document).ready(function() {
+        var ileIndex = localStorage.getItem("ileStorage");
+        var mtnIndex = localStorage.getItem("mtnStorage");
+        var localMtnIndex = localStorage.getItem("localMtnStorage");
+        $(".textbox").hide();
+        console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
+        switch (localMtnIndex)
+        {
+            case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
+            case "2": $(".mountain").attr("src","images/montagne-purple.svg"); break;
+            case "3": $(".mountain").attr("src","images/montagne-green.svg"); break;
+            case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
+            case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
+            default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        }
+        $(".salaire, .mission, .competence, .definition").on("click", function()
+        {
+            $(".textbox").show();
+            //texte qui sera affiché en cliquant sur une des 4 catégories. change le texte comme ceci: $(catégorie).html("METTRE LE TEXTE ICI")
+            switch($(this).attr("class"))
+            {
+                case "salaire":
+                    $(".textbox").html("  ");
+                    break;
+                case "mission":
+                    $(".textbox").html("Ce profil généraliste permet donc d’intervenir sur des missions diversifiées et à différents niveaux dans la conception du site, soit en globalité, soit sur certains aspects précis, tout dépend des besoins de l’entreprise. Il peut jongler entre plusieurs missions faisant intervenir différents outils de programmation au cours d’une même journée. Il peut aussi bien travailler sur le back office du site que sur le front end. De même, il peut se charger de l’architecture du site, de l’expérience utilisateur et même de l’intégration html. ");
+                    break;
+                case "competence":
+                    $(".textbox").html("Le développeur Full-Stack doit être compétent dans la création, la réalisation, le codage, l’architecture d’un site. Le développeur Full-stack est passionné de code, il a des compétences informatiques poussées ainsi qu’une parfaite maîtrise des langages de programmation et des bases de données. Il maitrise également les notions d’API pour dialoguer avec des sites partenaire. Ce professionnel doit donc posséder des compétences généralistes. Il doit aussi savoir faire preuve d’adaptation. Un bon développeur Full-Stack doit faire preuve de patience et de rigueur face aux difficultés. Un esprit de synthèse et de la créativité sont requis pour mener à bien les missions. Ainsi, il est impératif d’être capable d’analyser les enjeux financiers et marketing de l’entreprise pour proposer des solutions techniques, mais aussi de gestion de site conformes à ses capacités.   ");
+                    break;
+                case "definition":
+                    $(".textbox").html("Et si une personne pouvait coder entièrement un site, une application ou un service, du Back au Front, en passant par l’intégration ? Eh bien ! Cela est bien le cas du développeur Full Stack, qui est un peu « l’homme à tout faire de l’informatique». C’est est un programmeur touche à tout, polyvalent, capable de développer l'intégralité technique d'un dispositif digital web, c'est à dire le développement front office et le développement back office. Inutile de préciser que ce profil est donc particulièrement très prisé des start-ups. Notamment dans les start-up qui n’ont pas les moyens d’engager plusieurs développeurs spécialisés. L’embauche d’un développeur Full-Stack est donc une solution à la fois pratique et économique pour les startups et les petites entreprises. ");
+                    break;
+            }
+        })
+        $(".goBack").on("click", function()
+        {
+            window.history.back();
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <img class="mountain">
+        <div class="salaire"></div>
+        <div class="mission"></div>
+        <div class="competence"></div>
+        <div class="definition"></div>
+        <p class="textbox"></p>
+        <a class="goBack" href="#">Revenir à la carte</a>
+    </div>
+</body>
+</html>
