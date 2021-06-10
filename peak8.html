@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/peak.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="javascript" src="js/jquery.transit.min.js"></script>
+    <title>Montagne Game Designer </title>
+</head>
+<script>
+    $(document).ready(function() {
+        var ileIndex = localStorage.getItem("ileStorage");
+        var mtnIndex = localStorage.getItem("mtnStorage");
+        var localMtnIndex = localStorage.getItem("localMtnStorage");
+        $(".textbox").hide();
+        console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
+        switch (localMtnIndex)
+        {
+            case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
+            case "2": $(".mountain").attr("src","images/montagne-purple.svg"); break;
+            case "3": $(".mountain").attr("src","images/montagne-green.svg"); break;
+            case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
+            case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
+            default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        }
+        $(".salaire, .mission, .competence, .definition").on("click", function()
+        {
+            $(".textbox").show();
+            //texte qui sera affiché en cliquant sur une des 4 catégories. change le texte comme ceci: $(catégorie).html("METTRE LE TEXTE ICI")
+            switch($(this).attr("class"))
+            {
+                case "salaire":
+                    $(".textbox").html("Salaire débutant : 1 600 € - 2 000 € par mois  <br> Salaire expérimenté : 3 500€ par mois   ");
+                    break;
+                case "mission":
+                    $(".textbox").html("Le Game Designer occupe un poste clé, il est donc le « chef d’orchestre » de l’équipe de création d’un jeu vidéo. Le Game Designer intervient après le chef de projet, une fois que le publique du jeu vidéo est ciblé, que le type de jeu et le budget ont été définis.Après avoir mis en œuvre un Brainstorm avec l'équipe de production, et synthétiser les idées et désirs de chacun, Il va commencer à rédiger un cahier des charges (Game design document, GDD) afin de définir les règles du jeu, déterminer la manière de jouer, trouver une histoire captivante, créer un environnement ludique et fluide, apporter les modifications pour améliorer la jouabilité. Il va donc s’assurer que le jeu soit accessible, suffisamment ludique et interactif pour capter l’audience ciblée. Il intervient sur l’ensemble des étapes de création du jeu vidéo, Il doit en effet se concerter en permanence avec les info-designers, les animateurs, les graphistes, les illustrateurs sonores (Sound Designers). Avant la mise sur le marché du jeu, le Game Designer fait tester ses équipes et des testeurs extérieurs. Par la suite il prend en compte leurs remarques pour apporter les modifications et améliorer l'expérience de jeu. ");
+                    break;
+                case "competence":
+                    $(".textbox").html("Pour être Game Designer, il faut savoir être suffisamment inventif, créatif, aimer le jeu, afin de mettre sur pied un univers propre au jeu. Avoir une bonne culture, tant générale que de l'univers vidéo-ludique, ainsi que de la rigueur dans les idées et la prise de note, tout ces points semblent indispensables ! Il doit aussi avoir un fort esprit de synthèse et être à l'écoute, tant de son équipe de développement que des feedbacks des testeurs. Il doit donc faire preuve d’un esprit d’analyse et d’une capacité de discernement pointus ");
+                    break;
+                case "definition":
+                    $(".textbox").html("C'est principalement au Game Designer que l'on doit le plaisir de jouer à un jeu vidéo ! C’est lui qui conçoit le Gameplay, c'est-à-dire le concept, l’expérience et la prise en main du jeu en respectant unscénario.Le métier de Game Designer consiste donc à concevoir les règles et l'univers (personnages, décors...) d'un jeu vidéo. Il est chargé de rendre le jeu le plus interactif possiblepour donner une haleine qui tient en éveil le Gamer !");
+                    break;
+            }
+        })
+        $(".goBack").on("click", function()
+        {
+            window.history.back();
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <img class="mountain">
+        <div class="salaire"></div>
+        <div class="mission"></div>
+        <div class="competence"></div>
+        <div class="definition"></div>
+        <p class="textbox"></p>
+        <a class="goBack" href="#">Revenir à la carte</a>
+    </div>
+</body>
+</html>

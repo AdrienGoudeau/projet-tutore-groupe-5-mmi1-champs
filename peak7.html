@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/peak.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="javascript" src="js/jquery.transit.min.js"></script>
+    <title>Montagne UX Designer </title>
+</head>
+<script>
+    $(document).ready(function() {
+        var ileIndex = localStorage.getItem("ileStorage");
+        var mtnIndex = localStorage.getItem("mtnStorage");
+        var localMtnIndex = localStorage.getItem("localMtnStorage");
+        $(".textbox").hide();
+        console.log("n° ile: " + ileIndex, "   montagne: " + mtnIndex, "   montagne local: " + localMtnIndex);
+        switch (localMtnIndex)
+        {
+            case "1": $(".mountain").attr("src","images/montagne-blue.svg"); break;
+            case "2": $(".mountain").attr("src","images/montagne-purple.svg"); break;
+            case "3": $(".mountain").attr("src","images/montagne-green.svg"); break;
+            case "4": $(".mountain").attr("src","images/montagne-orange.svg"); break;
+            case "5": $(".mountain").attr("src","images/montagne-yellow.svg"); break;
+            default: $(".mountain").attr("src","images/montagne-purple.svg"); break;
+        }
+        $(".salaire, .mission, .competence, .definition").on("click", function()
+        {
+            $(".textbox").show();
+            //texte qui sera affiché en cliquant sur une des 4 catégories. change le texte comme ceci: $(catégorie).html("METTRE LE TEXTE ICI")
+            switch($(this).attr("class"))
+            {
+                case "salaire":
+                    $(".textbox").html("Salaire débutant : 2 500€ par mois  <br> Salaire expérimenté : 3 500€ par mois ");
+                    break;
+                case "mission":
+                    $(".textbox").html("L’UX Designer, travaille en collaboration avec les graphistes, les développeurs et notamment avec les chefs de produit, avec une démarche centrée sur l’utilisateur. Il adapte le budget et les technologies à différents projet et clients. Après avoir été briefé par le chef de produit, il identifie les objectifs du projet de son client pour faire naître un concept global pour ensuite identifier et reformuler les besoins partagés par le client. L’UX Designer doit définir ses stratégies en termes d'expérience client. Il doit ainsi rendre le site facile à trouver, accessible, productif, crédible pour créer la confiance et facilite la prise en main. Il devra prendre en compte plusieurs aspects : cognitive, affective, comportementale et émotionnelle. Il prend en compte l’aspect financier de son client pour lui proposer un site internet répondant et respectant le budget déterminé. Il prend en compte les attentes et les besoins de l’utilisateur. Pour déployer une UX efficace, le designer doit donc trouver l’équilibre entre accessibilité, la visibilité, la simplicité, l’intuition, fonctionnalités, esthétique, tout en insérant le story-telling de la marque. ");
+                    break;
+                case "competence":
+                    $(".textbox").html("L’UX designer doit savoir concilier la partie esthétique et pratique d’un site web. Il maîtrise les logiciels de créations graphique mais aussi ceux de conception de maquettes. Il possède également des connaissances en développement front-end et sait donc utiliser les langages informatiques HTML, CSS et JavaScript. Un UX designer doit être rigoureux et placer l’expérience utilisateur au centre de ses analyses et propositions. L'UX Designer chargé de l'interface utilisateurs est capable de gérer des projets et de mener une équipe. ");
+                    break;
+                case "definition":
+                    $(".textbox").html("L'UX designer (User expérience) est en charge de l'expérience utilisateur, souvent sur un site web ou une application. Il teste et imagine comment améliorer ou donner la meilleure ergonomie possible pour faciliter l'accès aux services ou produits en ligne. Le métier de l’UX Designer consiste donc à améliorer l’expérience utilisateur, la rendre agréable et utile, surtout en ses temps où le développement des nouvelles technologies ainsi que les évolutions et les tendances dans tous les domaines de la vie quotidienne sont en perpétuelle évolution, l’expérience utilisateur est de plus en plus importante et les profils UX de plus en plus recherchés !");
+                    break;
+            }
+        })
+        $(".goBack").on("click", function()
+        {
+            window.history.back();
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <img class="mountain">
+        <div class="salaire"></div>
+        <div class="mission"></div>
+        <div class="competence"></div>
+        <div class="definition"></div>
+        <p class="textbox"></p>
+        <a class="goBack" href="#">Revenir à la carte</a>
+    </div>
+</body>
+</html>
